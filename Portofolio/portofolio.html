@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Julian's portfolio - Front-end developer and machine learning specialist">
+  <title>Julian's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Julian's Portfolio</strong></div>
+    <div class="header-buttons">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <nav id="nav-links" class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="reveal">
+      <div class="home-container">
+        <div class="home-text">
+          <h1>Hi <span class="wave">👋</span>, I'm Julian</h1>
+          <p>
+            I'm a front-end developer with expertise in modern web technologies and machine learning.
+          </p>
+          <div class="cta-buttons">
+            <a href="#project" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="home-img">
+          <img src="gw.png" alt="Julian's profile picture">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p class="about-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="skills">
+          <h3>My Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="reveal">
+      <h2>Projects</h2>
+      
+      <div class="project-item box">
+        <div class="project-img">
+          <img src="/api/placeholder/400/300" alt="Website project illustration">
+        </div>
+        <div class="project-text">
+          <h3>Website Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    
+      <div class="project-item box">
+        <div class="project-img">
+          <img src="/api/placeholder/400/300" alt="Machine learning project illustration">
+        </div>
+        <div class="project-text">
+          <h3>Machine Learning Application</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Data Analysis</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Email:</strong> julianpermanasmg07@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p><strong>Phone:</strong> +62822 2003 5808</p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Julian. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Theme toggling functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const themeIcon = themeToggle.querySelector('i');
+    
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlEl.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    // Theme toggle button event listener
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlEl.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      htmlEl.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+    
+    // Update the theme icon based on current theme
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      } else {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+    }
+    
+    // Reveal animation on scroll
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal');
+      for (const el of reveals) {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const revealPoint = 100;
+    
+        if (elementTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        }
+      }
+    }
+    
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+    
+    // Close mobile menu when clicking on a link
+    const navItems = document.querySelectorAll('nav a');
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+    
+    // Form submission handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        contactForm.reset();
+      });
+    }
+    
+    // Initialize reveal animation on page load and scroll
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+    window.addEventListener('scroll', revealOnScroll);
+  </script>
+</body>
+</html>
