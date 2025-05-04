@@ -152,12 +152,7 @@
         <button type="submit" class="btn primary-btn">Send Message</button>
       </form>
       
-      <script>
-        document.getElementById("contact-form").addEventListener("submit", function () {
-          const name = document.getElementById("name").value;
-          document.getElementById("dynamic-subject").value = `Message from ${name}`;
-        });
-      </script>
+      
 
 
       
@@ -166,6 +161,7 @@
   </footer>
 
   <script>
+    
     // Theme toggling functionality
     const themeToggle = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
@@ -237,6 +233,13 @@
     // Initialize reveal animation on page load and scroll
     window.addEventListener('DOMContentLoaded', revealOnScroll);
     window.addEventListener('scroll', revealOnScroll);
+
+
+    document.getElementById("contact-form").addEventListener("submit", function () {
+          const name = document.getElementById("name").value;
+          document.getElementById("dynamic-subject").value = `Message from ${name}`;
+        });
+      
   </script>
 </body>
 </html>
