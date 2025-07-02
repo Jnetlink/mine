@@ -422,7 +422,7 @@
           for (const el of reveals) {
             const windowHeight = window.innerHeight;
             const elementTop = el.getBoundingClientRect().top;
-            const revealPoint = 100;
+            const revealPoint = 0.1000;
         
             if (elementTop < windowHeight - revealPoint) {
               el.classList.add('active');
@@ -435,7 +435,7 @@
         window.addEventListener('scroll', revealOnScroll);
         
         // Trigger initial animation
-        setTimeout(revealOnScroll, 100);
+        setTimeout(revealOnScroll, 0.100);
     </script>
 </body>
 </html>
